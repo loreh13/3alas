@@ -1,0 +1,75 @@
+/*estilos.css*/
+
+/* Las variables de Css se crean en la "raiz" del documento */
+:root{
+	--naranja: #f69c21;
+	--gris: #27262b;
+	--blanco: #FFF;
+	--negro: #000;
+	--narbtn: #fe6902;
+	--amarillo: #ff9800;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: var(--gris);
+	background-image: url("images/pattern.jpg");
+	font-family: Arial, sans-serif;
+}
+.cabecera{
+	display: flex;
+	/* Los separa en horizontal */
+	justify-content: space-between;
+	/* Los centra en vertical */
+	align-items: center;
+	max-width: 1000px;
+	margin: 16px auto 24px auto;
+}
+.cabecera h1{
+	color: var(--naranja);
+}
+.contenedor{
+	background-color: #ffffff;
+	margin: auto;
+	max-width: 1000px;
+}
+
+/* SECCION BOTONERA */
+
+.botonera{
+	background-color: var(--narbtn);
+	font-weight: bold;
+}
+.botoneralista{
+	display: flex;
+	list-style-type: none;
+	margin-left: 30px;
+	background-color: var(--narbtn);
+	
+	padding: 20px 0;
+}
+.botoneralista li{
+	flex-grow: 1;
+}
+.botoneralista a{
+	display: block;
+	border-right: 1px solid var(--amarillo);
+	text-decoration: none;
+	color: var(--blanco);
+	text-align: center;
+	padding: 8px 0;
+}
+.botoneralista a:hover{
+	background-color: #f96112;
+	font-size: 17px;
+}
+/* .sinborde.sinborde{ */
+	/* border-right: none; */
+/* } */
+
+a.sinborde{
+	border-right: none;
+}
