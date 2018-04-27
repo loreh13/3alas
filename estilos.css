@@ -8,6 +8,8 @@
 	--negro: #000;
 	--narbtn: #fe6902;
 	--amarillo: #ff9800;
+	--grisclaro: #a6a6a6;
+	--gris: #dcdcdc;
 }
 *{
 	margin: 0;
@@ -18,6 +20,10 @@ body{
 	background-color: var(--gris);
 	background-image: url("images/pattern.jpg");
 	font-family: Arial, sans-serif;
+}
+h2{
+	font-size: 20px;
+	margin-bottom: 16px;
 }
 .cabecera{
 	display: flex;
@@ -32,6 +38,7 @@ body{
 	color: var(--naranja);
 }
 .contenedor{
+	border-radius: 6px 6px 0 0;
 	background-color: #ffffff;
 	margin: auto;
 	max-width: 1000px;
@@ -40,6 +47,7 @@ body{
 /* SECCION BOTONERA */
 
 .botonera{
+	border-radius: 6px 6px 0 0;
 	background-color: var(--narbtn);
 	font-weight: bold;
 }
@@ -48,7 +56,6 @@ body{
 	list-style-type: none;
 	margin-left: 30px;
 	background-color: var(--narbtn);
-	
 	padding: 20px 0;
 }
 .botoneralista li{
@@ -64,7 +71,8 @@ body{
 }
 .botoneralista a:hover{
 	background-color: #f96112;
-	font-size: 17px;
+	font-size: 17px
+	;
 }
 /* .sinborde.sinborde{ */
 	/* border-right: none; */
@@ -72,4 +80,137 @@ body{
 
 a.sinborde{
 	border-right: none;
+}
+/*Slider*/
+.slider{
+	text-align: center;
+	margin-top: 30px;
+}
+/*
+------------------
+SECCION CATEGORIAS
+------------------
+*/
+.categorias{
+	margin-top: 50px;
+	width: 20%;
+	float: left;
+
+}
+.categorias h2{
+	padding-left: 24px;
+}
+.categorias-lista{
+	list-style-type: none;
+}
+.categorias-lista li{
+	padding: 6px 0;
+	padding-left: 35px;
+	border-bottom: 1px dotted var(--grisclaro);
+	
+}
+.categorias-lista a{
+	display: block;
+	text-decoration: none;
+	width: 100%;
+	color: var(--negro);
+}
+.categorias-lista a:hover{
+	font-weight: bold;
+}
+/*
+--------------
+SECCION PRODUCTOS
+-------------
+*/
+.productos{
+	margin-top: 50px;
+	width: 80%;
+	float: right;
+	background-color:;
+	padding-right: 56px;
+}
+.lampara{
+	float: left;
+	width: 50%;
+	padding-left: 26px;
+	padding-bottom: 27px;
+
+}
+.lampara img{
+	float: left;
+	padding-right: 20px;
+}
+.lampara p{
+	
+}
+/*
+--------------
+SECCION NEWSLETTER
+-------------
+*/
+.newsletter{
+	clear: both;
+	border-radius: 5px;
+	max-width: 940px;
+	margin: auto;
+	overflow: auto;
+	border: 1px solid var(--grisclaro);
+	padding: 10px 24px;
+	background-image: linear-gradient(
+		var(--blanco),
+		var(--gris));
+}
+
+.newsletter img{
+	float: left;
+}
+.newsletter-info{
+	padding-left: 40px;
+	float: left;
+}
+.newsletter-info p{
+	padding-left: 40px;
+}
+.newsletter-form{
+	margin-top: 13px;
+	float: right;
+}
+.newsletter-form [type="submit"]{
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 
+}
+
+
+
+/*
+--------------
+SECCION PIE
+-------------
+/* */ 
+.pie{
+	
+	background-color: pink;
+	width: 100%;
+	clear: both;
+}
+.pie-copy{
+	width: 25%;
+	background-color: green;
+	float: left;
+}
+.pie-china{
+	width: 25%;
+	float: left;
+}
+.pie-argentina{
+	width: 50%;
+	float: right;
+}
+.pie-credito{
+	width: 100%;
+	clear: both;
 }
