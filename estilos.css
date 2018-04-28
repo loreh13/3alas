@@ -44,7 +44,11 @@ h2{
 	max-width: 1000px;
 }
 
-/* SECCION BOTONERA */
+/*
+------------------
+SECCION BOTONERA
+------------------
+*/
 
 .botonera{
 	border-radius: 6px 6px 0 0;
@@ -55,7 +59,6 @@ h2{
 	display: flex;
 	list-style-type: none;
 	margin-left: 30px;
-	background-color: var(--narbtn);
 	padding: 20px 0;
 }
 .botoneralista li{
@@ -71,8 +74,16 @@ h2{
 }
 .botoneralista a:hover{
 	background-color: #f96112;
-	font-size: 17px
-	;
+	font-size: 17px;
+}
+.botonera-lista_formulario{
+	display: flex;
+	margin-left: 150px;
+	align-items: center;
+}
+.botonera-lista_formulario input{
+	padding: 2px 4px;
+	
 }
 /* .sinborde.sinborde{ */
 	/* border-right: none; */
@@ -190,27 +201,32 @@ SECCION NEWSLETTER
 --------------
 SECCION PIE
 -------------
-/* */ 
+*/
 .pie{
-	
-	background-color: pink;
-	width: 100%;
-	clear: both;
+	font-size: 14px;
+	background-color:var(--gris);
+	padding: 6px 50px;
+	border-top: 1px solid var(--negro);
+	margin-top: 30px;
 }
-.pie-copy{
-	width: 25%;
-	background-color: green;
+.pie-copy, .pie-china, .pie-argentina{
 	float: left;
 }
 .pie-china{
-	width: 25%;
-	float: left;
+	border-right: 1px solid var(--negro);
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.pie-copy h4{
+	font-weight: normal;
 }
 .pie-argentina{
-	width: 50%;
-	float: right;
+	padding-left: 10px;
 }
-.pie-credito{
-	width: 100%;
+.pie-creditos{
 	clear: both;
+	text-align: right;
+}
+.pie-creditos a{
+	font-family: 'Patrick Hand SC', cursive;
 }
